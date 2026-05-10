@@ -1,0 +1,272 @@
+export default function ProplumbMechanicalWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden border-b border-zinc-800">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-black to-black" />
+
+        <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-36 grid lg:grid-cols-2 gap-14 items-center">
+          <div>
+            <div className="inline-flex items-center rounded-full border border-blue-500/40 bg-blue-500/10 px-4 py-2 text-sm text-blue-300 mb-6">
+              Commercial & Industrial Plumbing Experts
+            </div>
+
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
+              Proplumb
+              <span className="block text-blue-500">Mechanical Ltd</span>
+            </h1>
+
+            <p className="mt-6 text-lg text-zinc-300 max-w-xl leading-relaxed">
+              Reliable commercial and industrial plumbing, heating, and gas services across the Lower Mainland and Fraser Valley.
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="tel:17789687410"
+                className="bg-blue-600 hover:bg-blue-500 transition px-7 py-4 rounded-2xl font-semibold shadow-lg shadow-blue-500/20"
+              >
+                Call Now
+              </a>
+
+              <a
+                href="#contact"
+                className="border border-zinc-700 hover:border-blue-500 hover:text-blue-400 transition px-7 py-4 rounded-2xl font-semibold"
+              >
+                Request a Quote
+              </a>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl shadow-blue-900/20">
+              <div className="space-y-5">
+                <div className="flex items-center justify-between border-b border-zinc-800 pb-4">
+                  <span className="text-zinc-400">Service Area</span>
+                  <span className="font-semibold">Lower Mainland & Fraser Valley</span>
+                </div>
+
+                <div className="flex items-center justify-between border-b border-zinc-800 pb-4">
+                  <span className="text-zinc-400">Phone</span>
+                  <span className="font-semibold">778-968-7410</span>
+                </div>
+
+                <div className="flex items-center justify-between border-b border-zinc-800 pb-4">
+                  <span className="text-zinc-400">Specialty</span>
+                  <span className="font-semibold">Commercial & Industrial</span>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <span className="text-zinc-400">Services</span>
+                  <span className="font-semibold">Plumbing • Heating • Gas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 className="text-4xl font-bold mb-6">Built for Commercial & Industrial Projects</h2>
+          <p className="text-zinc-300 leading-relaxed text-lg">
+            Proplumb Mechanical Ltd provides dependable plumbing, heating, and gas solutions for commercial buildings, industrial facilities, tenant improvements, and new construction projects.
+          </p>
+
+          <p className="text-zinc-400 leading-relaxed mt-6">
+            We focus on quality workmanship, fast response times, and reliable project execution to keep your operations running smoothly.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 gap-5">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+            <h3 className="text-3xl font-bold text-blue-500">24/7</h3>
+            <p className="text-zinc-400 mt-2">Emergency Service Support</p>
+          </div>
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+            <h3 className="text-3xl font-bold text-blue-500">100%</h3>
+            <p className="text-zinc-400 mt-2">Commitment to Quality</p>
+          </div>
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+            <h3 className="text-3xl font-bold text-blue-500">Licensed</h3>
+            <p className="text-zinc-400 mt-2">Professional & Insured</p>
+          </div>
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+            <h3 className="text-3xl font-bold text-blue-500">Local</h3>
+            <p className="text-zinc-400 mt-2">Serving BC Businesses</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="bg-zinc-950 border-y border-zinc-800">
+        <div className="max-w-7xl mx-auto px-6 py-24">
+          <div className="mb-14 text-center">
+            <h2 className="text-4xl font-bold">Our Services</h2>
+            <p className="text-zinc-400 mt-4 text-lg">
+              Commercial and industrial mechanical solutions tailored to your project needs.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              'Commercial Plumbing',
+              'Industrial Plumbing',
+              'Heating Systems',
+              'Gas Fitting',
+              'Boiler Installation',
+              'Mechanical Systems',
+              'Pipe Repair & Replacement',
+              'Preventative Maintenance',
+              'Tenant Improvements',
+              'New Construction',
+              'Retrofit Projects',
+              'Emergency Plumbing Service',
+            ].map((service) => (
+              <div
+                key={service}
+                className="bg-black border border-zinc-800 hover:border-blue-500 transition rounded-3xl p-7"
+              >
+                <h3 className="text-xl font-semibold">{service}</h3>
+                <p className="text-zinc-400 mt-3 leading-relaxed">
+                  Professional service backed by reliable workmanship and fast response times.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="max-w-7xl mx-auto px-6 py-24">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold">Why Choose Proplumb?</h2>
+          <p className="text-zinc-400 mt-4 text-lg">
+            Trusted by commercial and industrial clients throughout the Lower Mainland.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-4 gap-6">
+          {[
+            'Experienced Commercial Team',
+            'Fast Response Times',
+            'Reliable Project Delivery',
+            'Safety-Focused Workmanship',
+          ].map((item) => (
+            <div
+              key={item}
+              className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 text-center"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-blue-600/20 flex items-center justify-center mx-auto mb-5">
+                <div className="w-5 h-5 rounded-full bg-blue-500" />
+              </div>
+
+              <h3 className="text-lg font-semibold">{item}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-blue-600">
+        <div className="max-w-7xl mx-auto px-6 py-20 text-center">
+          <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+            Need Commercial Plumbing Support?
+          </h2>
+
+          <p className="mt-5 text-lg text-blue-100 max-w-2xl mx-auto">
+            Contact Proplumb Mechanical Ltd today for reliable plumbing, heating, and gas solutions.
+          </p>
+
+          <div className="mt-10 flex justify-center flex-wrap gap-4">
+            <a
+              href="tel:17789687410"
+              className="bg-black hover:bg-zinc-900 transition px-8 py-4 rounded-2xl font-semibold"
+            >
+              778-968-7410
+            </a>
+
+            <a
+              href="mailto:proplumbmechltd@gmail.com"
+              className="border border-white/40 hover:bg-white hover:text-black transition px-8 py-4 rounded-2xl font-semibold"
+            >
+              Email Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="max-w-7xl mx-auto px-6 py-24">
+        <div className="grid lg:grid-cols-2 gap-14">
+          <div>
+            <h2 className="text-4xl font-bold">Get a Quote</h2>
+            <p className="text-zinc-400 mt-5 text-lg leading-relaxed">
+              Reach out to discuss your commercial or industrial project requirements.
+            </p>
+
+            <div className="mt-10 space-y-5 text-lg">
+              <div>
+                <p className="text-zinc-500">Phone</p>
+                <p className="font-semibold">778-968-7410</p>
+              </div>
+
+              <div>
+                <p className="text-zinc-500">Email</p>
+                <p className="font-semibold">proplumbmechltd@gmail.com</p>
+              </div>
+
+              <div>
+                <p className="text-zinc-500">Service Area</p>
+                <p className="font-semibold">Lower Mainland & Fraser Valley</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+            <form className="space-y-5">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full bg-black border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-blue-500"
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full bg-black border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-blue-500"
+              />
+
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                className="w-full bg-black border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-blue-500"
+              />
+
+              <textarea
+                rows="5"
+                placeholder="Tell us about your project"
+                className="w-full bg-black border border-zinc-700 rounded-2xl px-5 py-4 focus:outline-none focus:border-blue-500"
+              />
+
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-500 transition py-4 rounded-2xl font-semibold"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-zinc-800 py-8 px-6 text-center text-zinc-500">
+        © 2026 Proplumb Mechanical Ltd — Commercial & Industrial Plumbing Services
+      </footer>
+    </div>
+  )
+}
