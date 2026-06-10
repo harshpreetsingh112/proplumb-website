@@ -155,12 +155,11 @@ max-width:1200px;
 margin:auto;
 }
 
-.hero-logo{
-max-width:250px;
+..hero-logo{
+max-width:150px;
 width:100%;
 height:auto;
 margin-bottom:30px;
-filter:drop-shadow(0 0 20px rgba(37,99,235,.4));
 }
 
 .hero h1{
