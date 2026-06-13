@@ -4,33 +4,195 @@
 <title>ProPlumb Mechanical Ltd</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-background:#050505;
-color:white;
 font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* HEADER */
+
+nav{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding:25px 50px;
+display:flex;
+justify-content:center;
+z-index:10;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-size:18px;
+font-weight:600;
+}
+
+.nav-links a:hover{
+color:#3b82f6;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:100px 20px;
+padding:20px;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.70),
+rgba(0,0,0,0.70)
+),
+url("https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
 }
 
-h1{
-font-size:48px;
+.hero h1{
+font-size:72px;
+margin-bottom:20px;
 }
 
-p{
-font-size:22px;
+.hero h2{
+font-size:32px;
+max-width:900px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:24px;
 color:#d1d5db;
+margin-bottom:30px;
 }
+
+/* BUTTONS */
 
 .btn{
 display:inline-block;
 background:#2563eb;
-padding:15px 25px;
+padding:16px 32px;
 margin:10px;
 color:white;
 text-decoration:none;
 border-radius:8px;
+font-weight:bold;
+transition:.3s;
 }
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+/* TRUST BAR */
+
+.trust{
+background:#111827;
+padding:40px 20px;
+display:flex;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+font-size:20px;
+}
+
+/* SECTIONS */
+
+.services-section,
+.areas-section{
+padding:80px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.services-section h2,
+.areas-section h2{
+font-size:42px;
+margin-bottom:40px;
+text-align:center;
+}
+
+/* CARDS */
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service-card{
+background:#1e293b;
+padding:35px;
+border-radius:12px;
+font-size:20px;
+font-weight:600;
+transition:.3s;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+background:#2563eb;
+}
+
+.service-card a{
+color:white;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+padding:30px;
+text-align:center;
+}
+
+footer p{
+color:#9ca3af;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.nav-links a{
+margin:0 10px;
+font-size:16px;
+}
+
+}
+
 </style>
 
 </head>
